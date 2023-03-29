@@ -7,7 +7,7 @@ import { IconButton } from "./button";
 import styles from "./home.module.scss";
 
 import SettingsIcon from "../icons/settings.svg";
-import GithubIcon from "../icons/github.svg";
+
 import ChatGptIcon from "../icons/chatgpt.svg";
 import SendWhiteIcon from "../icons/send-white.svg";
 import BrainIcon from "../icons/brain.svg";
@@ -582,7 +582,11 @@ export function Home() {
         <div className={styles["sidebar-header"]}>
           <div className={styles["sidebar-title"]}>ChatGPT Next</div>
           <div className={styles["sidebar-sub-title"]}>
-            Build your own AI assistant.
+            <button style={{ backgroundColor: 'white', color: 'black', border: '1px solid black', borderRadius: '5px' }}>
+    <a href="http://www.365pro.top" style={{ textDecoration: 'none', color: 'inherit' }}>
+      购买月卡激活码
+    </a>
+  </button>
           </div>
           <div className={styles["sidebar-logo"]}>
             <ChatGptIcon />
@@ -621,10 +625,6 @@ export function Home() {
               />
             </div>
             <div className={styles["sidebar-action"]}>
-              <a href={REPO_URL} target="_blank">
-                <IconButton icon={<GithubIcon />} />
-              </a>
-            </div>
           </div>
           <div>
             <IconButton
