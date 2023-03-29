@@ -94,9 +94,9 @@ const tw: LocaleType = {
       SubTitle: "當未壓縮的歷史訊息超過該值時，將進行壓縮",
     },
     Token: {
-      Title: "API Key",
-      SubTitle: "使用自己的 Key 可規避受控訪問限制",
-      Placeholder: "OpenAI API Key",
+      Title: "商務合作",
+      SubTitle: "诚邀合作，联系微信：office980",
+      Placeholder: "默認留空",
     },
     AccessCode: {
       Title: "訪問碼",
