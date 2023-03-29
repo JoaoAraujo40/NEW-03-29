@@ -579,10 +579,15 @@ export function Home() {
         className={styles.sidebar + ` ${showSideBar && styles["sidebar-show"]}`}
       >
         <div className={styles["sidebar-header"]}>
-          <div className={styles["sidebar-title"]}>ChatGPT Next</div>
-          <div className={styles["sidebar-sub-title"]}>
-            Build your own AI assistant.
-          </div>
+          <div className={styles["sidebar-title"]}>墨者AI-ChatGPT</div>
+                    <div>
+  <button onClick={() => window.location.href='https://www.365pro.top'} className={styles["sidebar-sub-title"]}>
+  购买月卡激活码
+</button>
+  <button onClick={() => window.location.href='https://www.chat.365pro.top/qun.html'} className={styles["sidebar-sub-title"]}>
+    加入交流群
+  </button>
+</div>
           <div className={styles["sidebar-logo"]}>
             <ChatGptIcon />
           </div>
