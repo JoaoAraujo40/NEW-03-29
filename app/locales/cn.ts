@@ -65,11 +65,11 @@ const cn = {
     },
     Update: {
       Version: (x: string) => `当前版本：${x}`,
-      IsLatest: "目前版本ID",
+      IsLatest: "目前版本",
       CheckUpdate: "检查更新",
       IsChecking: "正在检查更新...",
-      FoundUpdate: (x: string) => `发现新版本：${x}`,
-      GoToUpdate: "前往更新",
+      FoundUpdate: (x: string) => `版本ID：${x}`,
+      GoToUpdate: "购买GPT-4",
     },
     SendKey: "发送键",
     Theme: "主题",
@@ -77,7 +77,7 @@ const cn = {
     Prompt: {
       Disable: {
         Title: "禁用提示词自动补全",
-        SubTitle: "禁用后将无法自动根据输入补全",
+        SubTitle: "勾选后将取消自动根据输入补全功能",
       },
       List: "自定义提示词列表",
       ListCount: (builtin: number, custom: number) =>
@@ -109,7 +109,7 @@ const cn = {
     },
     MaxTokens: {
       Title: "单次回复限制 (max_tokens)",
-      SubTitle: "单次交互所用的最大 Token 数，不要超过1000",
+      SubTitle: "单次交互所用的最大 Token 数",
     },
     PresencePenlty: {
       Title: "话题新鲜度 (presence_penalty)",
@@ -118,7 +118,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "你好，我是ChatGPT,如果我回复中断，提示我继续即可",
+    BotHello: "你好，我是ChatGPT，如果我回复中断，提示我继续即可。",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) =>
