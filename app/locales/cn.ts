@@ -3,7 +3,7 @@ import { SubmitKey } from "../store/app";
 const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
-    Unauthorized: "现在是未授权状态，请在设置页填写授权码。",
+    Unauthorized: "现在是未激活状态，请在设置页填写月卡激活码。",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
@@ -65,7 +65,7 @@ const cn = {
     },
     Update: {
       Version: (x: string) => `当前版本：${x}`,
-      IsLatest: "已是最新版本",
+      IsLatest: "目前版本ID",
       CheckUpdate: "检查更新",
       IsChecking: "正在检查更新...",
       FoundUpdate: (x: string) => `发现新版本：${x}`,
@@ -93,23 +93,23 @@ const cn = {
       SubTitle: "当未压缩的历史消息超过该值时，将进行压缩",
     },
     Token: {
-      Title: "API Key",
-      SubTitle: "使用自己的 Key 可绕过受控访问限制",
-      Placeholder: "OpenAI API Key",
+      Title: "商务合作",
+      SubTitle: "诚邀商务合作 微信：office980",
+      Placeholder: "此处默认留空",
     },
     AccessCode: {
-      Title: "访问码",
-      SubTitle: "现在是受控访问状态",
-      Placeholder: "请输入访问码",
+      Title: "月卡激活码",
+      SubTitle: "填写订单页的激活码",
+      Placeholder: "请输入激活码",
     },
-    Model: "模型 (model)",
+    Model: "模型 (目前仅支持GPT3.5)",
     Temperature: {
       Title: "随机性 (temperature)",
       SubTitle: "值越大，回复越随机",
     },
     MaxTokens: {
       Title: "单次回复限制 (max_tokens)",
-      SubTitle: "单次交互所用的最大 Token 数",
+      SubTitle: "单次交互所用的最大 Token 数，不要超过1000",
     },
     PresencePenlty: {
       Title: "话题新鲜度 (presence_penalty)",
@@ -118,7 +118,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
+    BotHello: "你好，我是ChatGPT,如果我回复中断，提示我继续即可",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) =>
